@@ -1,4 +1,4 @@
-team_number = 11
+import random 
 team_name = 'Sibo & Shane'
 strategy_name = 'Follow unless patterns appear'
 strategy_description = "collude if they colluded last time and betray if they betrayed last time. If last few responses were the same, do the opposite (e.g. 'bbbb' ---> 'c')"
