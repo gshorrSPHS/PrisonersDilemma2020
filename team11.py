@@ -1,3 +1,6 @@
+Team 11
+Strategy: collude if they colluded last time and betray if they betrayed last time. If last few responses were the same, do the opposite (e.g. 'bbbb' ---> 'c'
+                                                                                                                                  
 def move(my_history, their_history, my_score, their_score):
 choices = ['c','b']
     if len(my_history) == 0:
