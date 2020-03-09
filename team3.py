@@ -33,7 +33,7 @@ def move(my_history, their_history, my_score, their_score):
         c = c + 1
       elif letter.lower() == "b":
         b = b + 1
-    print str(c)+ (" ") + str(b)
+
     if c >= b :
       return 'b'
     else:
