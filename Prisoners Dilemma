@@ -52,27 +52,3 @@ def move(my_history, their_history, my_score, their_score):
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
     
-def test_move(my_history, their_history, my_score, their_score, result):
-    '''calls move(my_history, their_history, my_score, their_score)
-    from this module. Prints error if return value != result.
-    Returns True or False, dpending on whether result was as expected.
-    '''
-    real_result = move(my_history, their_history, my_score, their_score)
-    if real_result == result:
-        return True
-    else:
-        print("move(" +
-            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
-                       str(my_score), str(their_score)])+
-            ") returned " + "'" + real_result + "'" +
-            " and should have returned '" + result + "'")
-        return False
-
-if __name__ == '__main__':     
-    # Test 1: Collude on the first move
-    if test_move(my_history='ccc',
-      their_history='bbbcccc', 
-      my_score=0,
-      their_score=0,
-      result='b'):
-        print 'this test passed'
