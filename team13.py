@@ -35,12 +35,12 @@ def move(my_history, their_history, my_score, their_score):
         return "b"
         
         # need to have something here in case nothing else works
-    if their_score < my_score:
+    elif their_score < my_score:
       if tc < mc:
         return "b"  
       else:
         return "c"
-    if their_score == my_score:
+    else:
       if tc == mc:
         return "c"
       else:
